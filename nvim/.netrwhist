@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/mateus/Documents/java/brnumeros'
+let g:netrw_dirhist_2='/home/mateus/Documents/java/brnumeros/src/main/java/dev/me'
+let g:netrw_dirhist_1='/home/mateus/Documents/java/brnumeros/src/main/java/dev'
+let g:netrw_dirhist_0='/home/mateus/Documents/java/brnumeros/src/main/java'
+let g:netrw_dirhist_9='/home/mateus/Documents/java/brnumeros/src/main'
+let g:netrw_dirhist_8='/home/mateus/Documents/java/brnumeros/src'
+let g:netrw_dirhist_7='/home/mateus/Documents/java/brnumeros'
+let g:netrw_dirhist_6='/home/mateus/Documents/java/adt'
+let g:netrw_dirhist_5='/home/mateus/Documents/java/java-io/src/main/java/dev/me'
+let g:netrw_dirhist_4='/home/mateus/Documents/java/java-io/src/main/java/dev'

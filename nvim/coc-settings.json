@@ -1,0 +1,23 @@
+{
+  "rust-analyzer.serverPath": "home/mateus/.cargo/rust-analyzer",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "javascript",
+    "html",
+    "xml",
+    "yaml",
+    "json",
+    "rust",
+    "cpp",
+    "java",
+    "elixir"
+  ],
+  "snippets.ultisnips.directories": [
+    "UltiSnips",
+    "~/.config/nvim/utils/snips"
+  ],
+  "codeLens.enable": true,
+  "java.referencesCodeLens.enabled": true,
+  "clangd.path": "/home/mateus/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd",
+  "java.format.settings.url": "/home/mateus/.config/coc/extensions/node_modules/redhat.java/eclipse-formatter.xml"
+}
