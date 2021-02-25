@@ -1,0 +1,41 @@
+Config { font = "xft:Fira Code:pixelsize=16:antialias=true:hinting=true"
+       , additionalFonts = []
+       , borderColor = "black"
+       , border = TopB
+       , bgColor = "black"
+       , fgColor = "grey"
+       , alpha = 255
+       , position = Top
+       , textOffset = -1
+       , iconOffset = -1
+       , lowerOnStart = True
+       , pickBroadest = False
+       , persistent = False
+       , hideOnStart = False
+       , iconRoot = "."
+       , allDesktops = True
+       , overrideRedirect = True
+       , commands = [ Run Weather "SBCH" ["-t","Chapecó: <tempC>°C",
+                                          "-L","18","-H","25",
+                                          "--normal","green",
+                                          "--high","red",
+                                          "--low","lightblue"] 36000
+                    , Run Network "wsl2" ["-L","0","-H","32",
+                                          "--normal","green","--high","red"] 10
+                    , Run Network "eth1" ["-L","0","-H","32",
+                                          "--normal","green","--high","red"] 10
+                    , Run Cpu ["-L","3","-H","50",
+                               "--normal","green","--high","red"] 10
+                    , Run Memory ["-t","Mem: <usedratio>%"] 10
+                    , Run Swap [] 10
+                    , Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
+                    , Run Battery ["-t","<acstatus> (<left>%)",
+                                   "-L","40", "-H","80","-h","green","-l","red",
+                                   "--", "-O", "<fc=green>On</fc>", "-i", ""] 10
+                    ]
+
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%cpu% | %memory% * %swap% | %wsl2% - %eth1% }\
+                    \{ <fc=#ee9a00>%date%</fc>| %SBCH% | %battery%"
+       }
